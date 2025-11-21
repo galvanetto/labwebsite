@@ -6,7 +6,7 @@ body {
   color: #222;
 }
 
-/* Navigation bar */
+/* Navigation bar – COMPACT & RESPONSIVE */
 header {
   background: white;
   border-bottom: 1px solid #eee;
@@ -21,14 +21,30 @@ header {
   align-items: center;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0.5rem 1rem;          /* tighter vertical padding */
+}
+
+.logo-hamburger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .nav .logo {
   font-weight: 600;
   font-size: 1.2rem;
+  margin: 0;
+  line-height: 1;
 }
 
+.ibs-logo {
+  height: 30px;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+/* Horizontal menu on tablets & desktop */
 .menu {
   list-style: none;
   display: flex;
@@ -43,20 +59,30 @@ header {
   font-weight: 500;
 }
 
-.menu a:hover {
-  text-decoration: underline;
-}
+.menu a:hover { text-decoration: underline; }
 
-
-/* Special Lab Memoirs tab style */
 .menu a.memoirs-link {
-  color: #8b0000;   /* dark red */
-  font-weight: 600; /* slightly heavier to stand out */
+  color: #8b0000;
+  font-weight: 600;
+}
+.menu a.memoirs-link:hover {
+  color: #b30000;
+  text-decoration: underline;
 }
 
-.menu a.memoirs-link:hover {
-  color: #b30000;   /* brighter red on hover */
-  text-decoration: underline;
+/* Hamburger (only visible on phones) */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2.5px;
+  background: #222;
+  margin: 5px 0;
+  transition: 0.3s;
 }
 
 
@@ -252,8 +278,18 @@ footer {
 
 /* Hamburger menu on phones */
 @media (max-width: 480px) {
+  .logo-hamburger {               /* logo + hamburger on the same line */
+    display: flex;
+  }
+  .nav .logo {
+    font-size: 1.13rem;
+  }
+  .ibs-logo { height: 28px; }
+
+  .hamburger { display: block; }
+
   .menu {
-    display: none;                   /* hidden by default */
+    display: none;
     flex-direction: column;
     width: 100%;
     background: white;
@@ -264,35 +300,38 @@ footer {
     box-shadow: 0 6px 12px rgba(0,0,0,0.1);
     z-index: 20;
   }
-
-  .menu.active {
-    display: flex;
-  }
-
-  .menu li,
-  .menu a.memoirs-link {
-    width: 100%;
-  }
+  .menu.active { display: flex; }
 
   .menu a {
     display: block;
-    padding: 0.35rem 1.5rem;
-    text-align: left;               /* ← left aligned */
+    padding: 0.15rem 0.5rem;      /* compact but comfortable */
+    text-align: left;
     color: #2e7d6b;
   }
+  .menu a.memoirs-link { color: #8b0000; font-weight: 600; }
+  .menu a:hover { background: #f8f8f8; }
+  .menu a.memoirs-link:hover { background: #fff5f5; color: #b30000; }
+}
 
-  .menu a.memoirs-link {
-    color: #8b0000;
-    font-weight: 600;
+/* Desktop / tablet – clean original layout, no wrapping */
+@media (min-width: 481px) {
+  .hamburger {
+    display: none !important;
   }
-
-  .menu a:hover {
-    background: #f8f8f8;
+  .logo-hamburger {
+    all: unset;              /* completely removes the flex wrapper we added for mobile */
+    display: block;
   }
-  .menu a.memoirs-link:hover {
-    color: #b30000;
-    background: #fff5f5;
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
+  .menu {
+    display: flex !important;
+    gap: 0.4rem 1.3rem;
+  }
+}
 
   /* Hamburger button */
   .hamburger {

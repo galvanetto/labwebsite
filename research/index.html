@@ -8,17 +8,35 @@
 </head>
 <body>
   <header>
-    <nav class="nav">
-      <div class="logo">Galvanetto Lab</div>
-      <ul class="menu">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../people/">People</a></li>
-        <li><a href="../research/">Research</a></li>
-        <li><a href="../publications/">Publications</a></li>
-        <li><a href="../contact/">Contact</a></li>
-		<a href="memoirs/" class="memoirs-link">Lab Memoirs</a>
-      </ul>
-    </nav>
+
+<nav class="nav">
+  <div class="logo-hamburger">
+    <!-- Logo + text on the same line -->
+    <div class="logo">
+      Galvanetto Lab @
+      <a href="https://www.ibs.fr/" target="_blank">
+        <img src="../images/ibslogo.jpg" alt="IBS logo" class="ibs-logo">
+      </a>
+    </div>
+
+    <!-- Hamburger (only visible on mobile) -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <ul class="menu" id="menu">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../people/">People</a></li>
+    <li><a href="../research/">Research</a></li>
+    <li><a href="../publications/">Publications</a></li>
+    <li><a href="../contact/">Contact</a></li>
+    <li><a href="../memoirs/" class="memoirs-link">Lab Memoirs</a></li>
+  </ul>
+</nav>
+
   </header>
 
 <main class="content">
@@ -31,13 +49,59 @@
   
 </main>
 
-<footer>
-  <p>© <span id="year"></span> Galvanetto Lab. All rights reserved.</p>
+<footer class="site-footer">
+  <div class="footer-logos-container">
+  <div class="footer-logos-left">
+      <img src="../images/formica.gif" alt="formica">
+    </div>
+  
+  
+  
+  
+    <div class="footer-logos-right">
+      <a href="https://www.cnrs.fr/en" target="_blank" rel="noopener">
+        <img src="../images/cnrslogo.jpg" alt="Logo cnrs">
+      </a>
+
+      <a href="https://www.cea.fr/english/Pages/home.aspx" target="_blank" rel="noopener">
+        <img src="../images/cealogo.jpg" alt="Logo 2">
+      </a>
+
+      <a href="https://www.univ-grenoble-alpes.fr/english/" target="_blank" rel="noopener">
+        <img src="../images/ugalogo.jpg" alt="Logo 3">
+      </a>
+    </div>
+  </div>
+
+  <!-- BOTTOM TEXT -->
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Galvanetto Lab. All rights reserved.</p>
+  </div>
 
   <script>
-    // Automatically sets the current year
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </footer>
+
+<script>
+  // Hamburger menu toggle – this makes it actually work
+  document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+
+    hamburger.addEventListener('click', function () {
+      menu.classList.toggle('active');
+    });
+
+    // Optional: close menu when a link is clicked (very nice on mobile)
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('active');
+      });
+    });
+  });
+</script>
+
+
 </body>
 </html>
