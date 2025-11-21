@@ -1,0 +1,339 @@
+/* Markdown-like clean font stack */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* Navigation bar */
+header {
+  background: white;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.nav .logo {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #2e7d6b;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+
+/* Special Lab Memoirs tab style */
+.menu a.memoirs-link {
+  color: #8b0000;   /* dark red */
+  font-weight: 600; /* slightly heavier to stand out */
+}
+
+.menu a.memoirs-link:hover {
+  color: #b30000;   /* brighter red on hover */
+  text-decoration: underline;
+}
+
+
+/* Hero section */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+
+.hero-text banner{
+    font-size: 1.7rem;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    text-shadow: 0px 2px 6px rgba(0,0,0,0.6);
+    margin: 0;
+    padding-top: 20vh;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}
+
+/* Main content */
+.content {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+
+
+/* Footer -------------------- */
+/* FOOTER CONTAINER */
+footer {
+  padding: 20px;
+   background-color: #f5f5f5; 
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
+}
+
+.site-footer {
+  background-color: #fff;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+}
+
+.footer-logos-container {
+  max-width: 1000px;   /* match your header width */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.footer-logos-left img {
+  height: 50px;
+  width: auto;
+}
+
+.footer-logos-right img {
+  height: 40px;   /* adjust per logo */
+  width: auto;
+  margin-left: 15px;
+}
+
+.footer-logos-right a {
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  color: #555;
+}
+
+/* ALL LOGOS */
+.footer-logo {
+  height: 40px;   /* adjust as you prefer */
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-logo:hover {
+  opacity: 1;
+}
+
+/* A slightly larger IBS logo */
+.footer-logo.ibs {
+  height: 48px;
+}
+
+/* BOTTOM TEXT */
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* End Footer */
+
+
+
+
+.main-image {
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+.person {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1.5rem;
+}
+
+.person-photo {
+  width: 120px;      /* adjust as needed */
+  height: 140px;     /* adjust as needed */
+  object-fit: cover;
+  /* border-radius: 50%; */ /* removed to make rectangle */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.person-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #2e7d6b;
+}
+
+.person-info p {
+  margin: 0.3rem 0;
+  line-height: 1.4;
+}
+
+.ibs-logo {
+  height: 32px;        /* Adjust as you like */
+  margin-left: 1px;    /* Small spacing after the @ */
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+
+/* ─────────────────── RESPONSIVE NAV ─────────────────── */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    padding: 0.6rem 1rem;
+  }
+  .logo {
+    margin-bottom: 0.1rem;
+  }
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+/* Hamburger menu on phones */
+@media (max-width: 480px) {
+  .menu {
+    display: none;                   /* hidden by default */
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-top: 1px solid #eee;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    z-index: 20;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu li,
+  .menu a.memoirs-link {
+    width: 100%;
+  }
+
+  .menu a {
+    display: block;
+    padding: 0.35rem 1.5rem;
+    text-align: left;               /* ← left aligned */
+    color: #2e7d6b;
+  }
+
+  .menu a.memoirs-link {
+    color: #8b0000;
+    font-weight: 600;
+  }
+
+  .menu a:hover {
+    background: #f8f8f8;
+  }
+  .menu a.memoirs-link:hover {
+    color: #b30000;
+    background: #fff5f5;
+  }
+
+  /* Hamburger button */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background: #222;
+    margin: 5px 0;
+    transition: 0.3s;
+  }
+}
+
+/* Hide hamburger on larger screens */
+@media (min-width: 481px) {
+  .hamburger {
+    display: none;
+  }
+  .menu {
+    display: flex !important;
+  }
+}
+
+/* Tiny JavaScript to toggle the menu */
+document.addEventListener('DOMContentLoaded', function () {
+  const hamburger = document.getElementById('hamburger');
+  const menu = document.getElementById('menu');
+
+  hamburger.addEventListener('click', function () {
+    menu.classList.toggle('active');
+  });
+
+  // Close menu when clicking a link (nice on mobile)
+  menu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.remove('active');
+    });
+  });
+});

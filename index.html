@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galvanetto Lab</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+  
+  
+<nav class="nav">
+  <div class="logo">
+    Galvanetto Lab @ 
+    <a href="https://www.ibs.fr/" target="_blank">
+      <img src="images/ibslogo.jpg" alt="IBS logo" class="ibs-logo">
+    </a>
+  </div>
+
+  <!-- Hamburger (only visible on small screens) -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul class="menu" id="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="people/">People</a></li>
+    <li><a href="research/">Research</a></li>
+    <li><a href="publications/">Publications</a></li>
+    <li><a href="contact/">Contact</a></li>
+    <li><a href="memoirs/" class="memoirs-link">Lab Memoirs</a></li>
+  </ul>
+</nav>
+
+
+
+  </header>
+
+  <section class="hero">
+    <img src="images/banner.jpg" alt="Lab banner" class="hero-image" />
+    <div class="hero-text">
+      <!-- <h1>Galvanetto Lab</h1> -->
+      <banner>We explore life starting at the molecular level.</banner>
+    </div>
+  </section>
+
+  <main class="content">
+    <h3>What we like to do</h3>
+    <p>
+      We work in experimental biophysics, with a focus on single-molecule experiments. 
+	  We also venture into computation and theory to better understand what we observe. 
+	  Above all, we strive to maintain the highest possible rigor in everything we do.
+    </p>
+	
+	<img src="images/microscope.jpg" alt="Fluorescence microscope setup" class="main-image">
+	
+    <h3>Why we do it</h3>
+    <p>
+      We are not fully satisfied with current views on how life works. 
+	  These views are not necessarily incorrect, but they often feel incomplete. 
+	  One self-evident example is the prodigious coherence of the continuous and 
+	  simultaneous molecular processes that occur within a single cell. 
+	  While these processes can, in principle, be reduced into parts and analyzed individually, 
+	  they operate as a whole in practice, producing what we broadly call life. It's no surprise 
+	  that some of the greatest minds of the past sympathized with the unorthodox idea of a "projective force" 
+	  behind life itself. In the early 21st century, with marvelous technologies in our hands, we believe that 
+	  exploring these fundamental questions is the most exciting pursuit imaginable. By engaging with these questions, 
+	  we hope to deepen our understanding of life and offer new insights into disease.
+    </p>
+	
+	<h3>How we approach the problem in practice</h3>
+    <p>
+      We are currently interested 
+    </p>
+  </main>
+
+<footer class="site-footer">
+  <div class="footer-logos-container">
+  <div class="footer-logos-left">
+      <img src="images/formica.gif" alt="formica">
+    </div>
+  
+  
+  
+  
+    <div class="footer-logos-right">
+      <a href="https://www.cnrs.fr/en" target="_blank" rel="noopener">
+        <img src="images/cnrslogo.jpg" alt="Logo cnrs">
+      </a>
+
+      <a href="https://www.cea.fr/english/Pages/home.aspx" target="_blank" rel="noopener">
+        <img src="images/cealogo.jpg" alt="Logo 2">
+      </a>
+
+      <a href="https://www.univ-grenoble-alpes.fr/english/" target="_blank" rel="noopener">
+        <img src="images/ugalogo.jpg" alt="Logo 3">
+      </a>
+    </div>
+  </div>
+
+  <!-- BOTTOM TEXT -->
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Galvanetto Lab. All rights reserved.</p>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</footer>
+
+<script>
+  // Hamburger menu toggle – this makes it actually work
+  document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+
+    hamburger.addEventListener('click', function () {
+      menu.classList.toggle('active');
+    });
+
+    // Optional: close menu when a link is clicked (very nice on mobile)
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('active');
+      });
+    });
+  });
+</script>
+
+
+</body>
+</html>

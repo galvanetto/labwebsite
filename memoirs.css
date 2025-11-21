@@ -1,0 +1,32 @@
+/* Override the global font with Times New Roman */
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #fdfdfd; /* or a light yellowish #fffaf0 for vintage feel */
+  color: #000;
+}
+
+/* Optional: 90s-style links */
+a {
+  color: #0000EE; /* classic blue */
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #551A8B; /* the classic visited link purple on hover */
+}
+
+/* Optional: add a border around the main content area */
+.main-content {
+  border: 2px solid #000;
+  padding: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #ffffff;
+}
+
+/* Optional: retro title style */
+h1, h2, h3 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
