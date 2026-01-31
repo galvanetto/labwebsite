@@ -214,6 +214,30 @@ footer {
 
 /* End Footer */
 
+.main-figure { 
+  margin: 1.5rem auto;
+  max-width: var(--w, 45%); /* default 45% if --w not set */
+}
+
+.main-imagewrap  { 
+  display:block; width:100%;
+  border-radius:1px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.main-imagewrapNoshadow  { 
+  display:block; width:100%;
+  border-radius:1px;
+}
+
+.main-caption{
+  margin-top:0.4rem;
+  font-size:0.85rem;
+  color:#555;
+  text-align:left;
+  line-height:1.2;
+}
+
 .main-imageThin {
   display: block;
   margin: 1.5rem auto;
