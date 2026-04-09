@@ -5,6 +5,7 @@
 body {
   margin: 0;
   font-family: "Libre Franklin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 0.93rem;
   line-height: 1.6;
   color: #222;
 }
@@ -124,13 +125,13 @@ header {
 }
 
 .hero-text h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 0;
 }
 
 
 .hero-text banner{
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     font-weight: 300;
     color: white;
     text-align: center;
@@ -151,7 +152,7 @@ header {
 }
 
 .content h2 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin-bottom: 1rem;
 }
 
@@ -347,6 +348,21 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.875rem;
+  }
+  .hero-text banner {
+    font-size: 1.1rem;
+  }
+  .content h2 {
+    font-size: 1.3rem;
+  }
+  .content h3 {
+    font-size: 1.05rem;
   }
 }
 
