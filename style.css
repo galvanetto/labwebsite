@@ -384,6 +384,28 @@ footer {
 }
 
 
+/* ─────────────────── Papers ─────────────────── */
+
+.paper-entry {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.paper-entry img {
+  width: 160px;
+  height: 100px;
+  flex-shrink: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.paper-entry .paper-text {
+  font-size: 0.82em;
+  line-height: 1.3;
+}
+
 
 
 
