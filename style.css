@@ -342,10 +342,12 @@ footer {
 }
 
 .person-photo {
-  width: 120px;      /* adjust as needed */
+  width: 110px;      /* adjust as needed */
   height: 140px;     /* adjust as needed */
-  object-fit: cover;
-  /* border-radius: 50%; */ /* removed to make rectangle */
+  object-fit: cover;              /* scales the image so it fills the box, cropping overflow */
+  object-position: center center; /* makes sure the crop is centered on both x and y */
+  flex-shrink: 0;                 /* stops the photo shrinking if bio text is long */
+  display: block;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
