@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join us — Nicola Galvanetto Lab</title>
+  <meta name="description" content="Open positions in the Galvanetto Lab at IBS Grenoble: postdocs, PhD and Master's students in single-molecule biophysics.">
+  <meta name="author" content="Nicola Galvanetto">
+  <link rel="icon" href="../favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Galvanetto Lab">
+  <meta property="og:title" content="Join us — Nicola Galvanetto Lab">
+  <meta property="og:description" content="Open positions in the Galvanetto Lab at IBS Grenoble: postdocs, PhD and Master's students in single-molecule biophysics.">
+  <meta property="og:url" content="https://galvanettolab.org/join/">
+  <meta property="og:image" content="https://galvanettolab.org/images/bannerbeads.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <!-- ───────── Sidebar ───────── -->
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <a class="site-title" href="../index.html">Galvanetto Lab</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="sidebar-body" id="menu">
+      <nav>
+        <ul class="menu">
+          <li><a href="../research/">Research</a></li>
+          <li><a href="../people/">People</a></li>
+          <li><a href="../publications/">Publications</a></li>
+          <li><a href="../join/" class="active">Join us</a></li>
+          <li><a href="../contact/">Contact</a></li>
+          <li class="aside"><a href="../memoirs/">Lab Memoirs</a></li>
+        </ul>
+      </nav>
+
+
+      <div class="sidebar-logos">
+        <a href="https://www.cnrs.fr/en" target="_blank" rel="noopener"><img src="../images/cnrslogo.jpg" alt="CNRS"></a>
+        <a href="https://www.ibs.fr/" target="_blank" rel="noopener"><img src="../images/ibslogo.jpg" alt="IBS"></a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ───────── Main ───────── -->
+  <main class="main">
+    <div class="wrap">
+      <div class="breadcrumb">
+        <a href="../index.html" class="crumb-home" aria-label="Home"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M3.5 11.5 12 4.5l8.5 7"/><path d="M6 9.5V20h4.2v-5.5h3.6V20H18V9.5"/></svg></a>
+        <span>-</span>
+        <span>Join us</span>
+      </div>
+
+      <h1 class="statement">Join us</h1>
+
+      <section class="row">
+        <h2 class="label">Open positions</h2>
+        <div class="text">
+          <p>We just started the lab, so things are still growing.
+          If you’re interested in joining, don’t hesitate to reach out, even if no formal position is listed. And please, we prefer an honest badly-written, non-AI email.</p>
+          <p><i>Please also do not feel bad if we do not answer promptly, as we certainly read your email and are internally evaluating what is possible to do.</i></p>
+          <p>We are currently considering positions for spring 2027.</p>
+          <p><b>Master's students*</b><br>
+          <i>*International Master's students may not be aware that theses in France come with mandatory "gratification"
+          of around €600 per month.</i></p>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <p>Galvanetto Lab — Institut de Biologie Structurale, Grenoble</p>
+        <p class="footer-right">© <span id="year"></span><img src="../images/formica.gif" alt="" class="ant-gif"></p>
+      </footer>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    (function () {
+      var btn = document.getElementById("hamburger");
+      var menu = document.getElementById("menu");
+      btn.addEventListener("click", function () {
+        var open = menu.classList.toggle("open");
+        btn.classList.toggle("open", open);
+        btn.setAttribute("aria-expanded", open);
+      });
+      menu.querySelectorAll("a").forEach(function (a) {
+        a.addEventListener("click", function () { menu.classList.remove("open"); btn.classList.remove("open"); });
+      });
+    })();
+  </script>
+</body>
+</html>

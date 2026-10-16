@@ -1,141 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <title>Lab Memoirs</title>
-
-  <style>
-body {
-  font-family: "Libre Franklin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-  font-size: 0.93rem;
-  margin: 0;
-  padding: 4px;
-  background-image: url("../images/paper_texture.png"); 
-  background-size: cover;
-  background-repeat: repeat;
-  background-attachment: fixed;
-  line-height: 1.6;
-}
-
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background: rgba(255, 255, 255, 0.1);
-      padding: 30px;
-      border: 2px solid #aaa;
-      box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    }
-
-    h1 {
-      text-align: center;
-      margin-top: 0;
-      font-size: 1.7em;
-    }
-
-.back-button {
-  display: inline-block;
-  margin-bottom: 20px;
-  padding: 8px 16px;
-  font-size: 0.9rem;
-  font-family: "Libre Franklin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-  color: black;
-  background-color: #e5d9b6;
-  border: 1px solid #000;
-  text-decoration: none;
-}
-
-.back-button:hover {
-      background-color: #d8cda4;
-    }
-	
-	
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-    @media (max-width: 480px) {
-      body { font-size: 0.875rem; }
-      h1 { font-size: 1.3em; }
-      h3 { font-size: 1em; }
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab Memoirs — Nicola Galvanetto Lab</title>
+  <meta name="description" content="A collection of informal memories and moments from the Galvanetto Lab.">
+  <meta name="author" content="Nicola Galvanetto">
+  <link rel="icon" href="../favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Galvanetto Lab">
+  <meta property="og:title" content="Lab Memoirs — Nicola Galvanetto Lab">
+  <meta property="og:description" content="A collection of informal memories and moments from the Galvanetto Lab.">
+  <meta property="og:url" content="https://galvanettolab.org/memoirs/">
+  <meta property="og:image" content="https://galvanettolab.org/images/bannerbeads.jpg">
+  <meta name="twitter:card" content="summary_large_image">
 </head>
-
 <body>
 
-  <div class="container">
-    <a class="back-button" href="../index.html">← Back to Galvanetto Lab Home</a>
+  <!-- ───────── Sidebar ───────── -->
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <a class="site-title" href="../index.html">Galvanetto Lab</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
 
-    <h1>A collection of informal memories and moments from our lab</h1>
-
-
-  <h3>03/09/2026—La table</h3>
-  <p>
-   I embarked on an endeavour that I did not expect to be so complicated. So this is partly a way to remember an adventure, but also a constructive criticism of a system that favours standard but inefficient procedures over creative solutions, even when the latter can save a lot of money and energy.
-The story begins with Didier Marguet, from CIML in Marseille, who offered me his FCS setup and additional systems that he had built over the years, as he was retiring. I obviously took the offer.
-Even though both our institutes are part of CNRS, the bureaucracy was already complicated and took several months. In the end, thanks to a strategic phone call from the great Anaïs Fradin, we managed.
-The next problem was transporting the optical table. It weighs 300 kg, so the options were either to go with four of my strong friends and a van, or to hire a professional moving company. I went for the second option, even though my spirit was pushing me towards the first. In retrospect, my instinct was right.
-So I tried to navigate the wild market of moving companies. Apparently, transporting a table over 300 km can cost around five grand. More than the table itself. Eventually, I found a company that could do it for a third.
-And this is where the show begins.
-With French public research money, you are not supposed to pay in advance, but the company wanted an advance payment. They discussed the issue with the great Marylène, and it looked like she had found a solution. Then the company disappeared.
-Being an optimist, I waited. Eventually, they confirmed the booking, so I went to Marseille to help them and organise everything the day before the move.
-The guy from the company called me while I was with Didier. As I clearly don't speak French, Didier had to mediate. At some point, Didier made a resigned expression: "It's not gonna happen."
-</p>
-
-  <img src="../images/table.jpeg" alt="Fluorescence microscope setup" style="max-width: 80%; height: auto;">   
-
-  <p>
-In the end, they did come and transport the table to Grenoble, but I had to pay cash in advance and, eventually, make a bank transfer directly to the driver's account because, according to his boss, the driver didn't have enough money to get back to Marseille. The driver apologised. They also broke the truck's tail lift, so they couldn't unload the table for a good hour, while all the IBS administration was in the parking lot with me and them. 
-This whole operation made me reflect about the inefficiency of public institutions. I don't want to complain, I just want to acknowledge that sometimes more flexibility would be welcomed. In fact I can't complain because we all had a lot of fun eventually.
-  </p>
+    <div class="sidebar-body" id="menu">
+      <nav>
+        <ul class="menu">
+          <li><a href="../research/">Research</a></li>
+          <li><a href="../people/">People</a></li>
+          <li><a href="../publications/">Publications</a></li>
+          <li><a href="../join/">Join us</a></li>
+          <li><a href="../contact/">Contact</a></li>
+          <li class="aside"><a href="../memoirs/" class="active">Lab Memoirs</a></li>
+        </ul>
+      </nav>
 
 
-  <h3>11/08/2026—First visitor</h3>
-  <p>
-    Wojciech Lipinski, who did great work in the Netherlands, is the first visitor of the lab. Hopefully, we will have the opportunity to work together in the future.
-  </p>
-  <img src="../images/woj_seminar.png" alt="Fluorescence microscope setup" style="max-width: 80%; height: auto;">      
-	
-	
-  <h3>03/08/2026—Good stuff</h3>
-  <p>
-    I am very happy because the first serious components for the microscope have arrived. They are Picoquant modules for single photon detection at high time resolution. I am looking forward to receiving the rest.
-  </p>
-  <img src="../images/multiharp.jpeg" alt="Fluorescence microscope setup" style="max-width: 80%; height: auto;">	
-	
-	
-	
-  <h3>03/03/2026—Arrival</h3>
-  <p>
-    It happened indeed, yesterday. It is great to see snow capped mountains from the office. And the lab space looks good to.
-  </p>
-  <img src="../images/new lab.png" alt="Fluorescence microscope setup" style="max-width: 80%; height: auto;">
-	
+      <div class="sidebar-logos">
+        <a href="https://www.cnrs.fr/en" target="_blank" rel="noopener"><img src="../images/cnrslogo.jpg" alt="CNRS"></a>
+        <a href="https://www.ibs.fr/" target="_blank" rel="noopener"><img src="../images/ibslogo.jpg" alt="IBS"></a>
+      </div>
+    </div>
+  </aside>
 
-  <h3>09/11/2025—Tour de France</h3>
-  <p>
-    I met a lot of people across Grenoble, Marseille, 
-	and Montpellier. It was good to finally meet Felix Rico and 
-	Jérôme Wenger in person. Great news is that Didier Marguet might give 
-	me his own equipment. Let's see if we can 
-	write a project with Jérémie Torres on long range interactions. 
-	I also hope to start working with Irene Wang from the LIPhy. 
-	The idea of having a real lab is becoming more and more concrete in my mind. It's actually happening.
-  </p>
-  
-   <h3>14/10/2025—Decision</h3>
-  <p>
-    I have decided to start my lab in France, painfully declining the offer in Sweden. 
-	It would have been nice to start my group next to Fredrik Höök, but it was an intuitive decision to go to France.
-	Thanks to the ATIP grant and the Ernst Hodorn Fellowship, 
-	this will happen at IBS in Grenoble. Excitement.
-  </p>
+  <!-- ───────── Main ───────── -->
+  <main class="main">
+    <div class="wrap">
+      <div class="breadcrumb">
+        <a href="../index.html" class="crumb-home" aria-label="Home"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M3.5 11.5 12 4.5l8.5 7"/><path d="M6 9.5V20h4.2v-5.5h3.6V20H18V9.5"/></svg></a>
+        <span>-</span>
+        <span>Lab Memoirs</span>
+      </div>
 
-   </div>
+      <h1 class="statement">Lab Memoirs</h1>
 
+      <section class="row">
+        <div class="label"></div>
+        <div class="text"><p class="lead">A collection of informal memories and moments from our lab</p></div>
+      </section>
+
+      <article class="row memoir">
+        <p class="label">03/09/2026</p>
+        <div class="text">
+          <h2 class="memoir-title">La table</h2>
+          <p>I embarked on an endeavour that I did not expect to be so complicated. So this is partly a way to remember an adventure, but also a constructive criticism of a system that favours standard but inefficient procedures over creative solutions, even when the latter can save a lot of money and energy.
+          The story begins with Didier Marguet, from CIML in Marseille, who offered me his FCS setup and additional systems that he had built over the years, as he was retiring. I obviously took the offer.
+          Even though both our institutes are part of CNRS, the bureaucracy was already complicated and took several months. In the end, thanks to a strategic phone call from the great Anaïs Fradin, we managed.
+          The next problem was transporting the optical table. It weighs 300 kg, so the options were either to go with four of my strong friends and a van, or to hire a professional moving company. I went for the second option, even though my spirit was pushing me towards the first. In retrospect, my instinct was right.
+          So I tried to navigate the wild market of moving companies. Apparently, transporting a table over 300 km can cost around five grand. More than the table itself. Eventually, I found a company that could do it for a third.
+          And this is where the show begins.
+          With French public research money, you are not supposed to pay in advance, but the company wanted an advance payment. They discussed the issue with the great Marylène, and it looked like she had found a solution. Then the company disappeared.
+          Being an optimist, I waited. Eventually, they confirmed the booking, so I went to Marseille to help them and organise everything the day before the move.
+          The guy from the company called me while I was with Didier. As I clearly don't speak French, Didier had to mediate. At some point, Didier made a resigned expression: "It's not gonna happen."</p>
+          <img src="../images/table.jpeg" alt="The optical table">
+          <p>In the end, they did come and transport the table to Grenoble, but I had to pay cash in advance and, eventually, make a bank transfer directly to the driver's account because, according to his boss, the driver didn't have enough money to get back to Marseille. The driver apologised. They also broke the truck's tail lift, so they couldn't unload the table for a good hour, while all the IBS administration was in the parking lot with me and them.
+          This whole operation made me reflect about the inefficiency of public institutions. I don't want to complain, I just want to acknowledge that sometimes more flexibility would be welcomed. In fact I can't complain because we all had a lot of fun eventually.</p>
+        </div>
+      </article>
+      <article class="row memoir">
+        <p class="label">11/08/2026</p>
+        <div class="text">
+          <h2 class="memoir-title">First visitor</h2>
+          <p>Wojciech Lipinski, who did great work in the Netherlands, is the first visitor of the lab. Hopefully, we will have the opportunity to work together in the future.</p>
+          <img src="../images/woj_seminar.png" alt="Wojciech Lipinski's seminar">
+
+        </div>
+      </article>
+      <article class="row memoir">
+        <p class="label">03/08/2026</p>
+        <div class="text">
+          <h2 class="memoir-title">Good stuff</h2>
+          <p>I am very happy because the first serious components for the microscope have arrived. They are Picoquant modules for single photon detection at high time resolution. I am looking forward to receiving the rest.</p>
+          <img src="../images/multiharp.jpeg" alt="Picoquant single-photon detection modules">
+
+        </div>
+      </article>
+      <article class="row memoir">
+        <p class="label">03/03/2026</p>
+        <div class="text">
+          <h2 class="memoir-title">Arrival</h2>
+          <p>It happened indeed, yesterday. It is great to see snow capped mountains from the office. And the lab space looks good too.</p>
+          <img src="../images/new lab.png" alt="The new lab">
+
+        </div>
+      </article>
+      <article class="row memoir">
+        <p class="label">09/11/2025</p>
+        <div class="text">
+          <h2 class="memoir-title">Tour de France</h2>
+          <p>I met a lot of people across Grenoble, Marseille,
+          and Montpellier. It was good to finally meet Felix Rico and
+          Jérôme Wenger in person. Great news is that Didier Marguet might give
+          me his own equipment. Let's see if we can
+          write a project with Jérémie Torres on long range interactions.
+          I also hope to start working with Irene Wang from the LIPhy.
+          The idea of having a real lab is becoming more and more concrete in my mind. It's actually happening.</p>
+
+        </div>
+      </article>
+      <article class="row memoir">
+        <p class="label">14/10/2025</p>
+        <div class="text">
+          <h2 class="memoir-title">Decision</h2>
+          <p>I have decided to start my lab in France, painfully declining the offer in Sweden.
+          It would have been nice to start my group next to Fredrik Höök, but it was an intuitive decision to go to France.
+          Thanks to the ATIP grant and the Ernst Hadorn Fellowship,
+          this will happen at IBS in Grenoble. Excitement.</p>
+
+        </div>
+      </article>
+
+      <footer class="site-footer">
+        <p>Galvanetto Lab — Institut de Biologie Structurale, Grenoble</p>
+        <p class="footer-right">© <span id="year"></span><img src="../images/formica.gif" alt="" class="ant-gif"></p>
+      </footer>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    (function () {
+      var btn = document.getElementById("hamburger");
+      var menu = document.getElementById("menu");
+      btn.addEventListener("click", function () {
+        var open = menu.classList.toggle("open");
+        btn.classList.toggle("open", open);
+        btn.setAttribute("aria-expanded", open);
+      });
+      menu.querySelectorAll("a").forEach(function (a) {
+        a.addEventListener("click", function () { menu.classList.remove("open"); btn.classList.remove("open"); });
+      });
+    })();
+  </script>
 </body>
 </html>

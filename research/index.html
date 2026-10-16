@@ -4,189 +4,158 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Research — Nicola Galvanetto Lab</title>
+  <meta name="description" content="Experimental biophysics, Single-molecule FRET, biomolecular condensates, and intrinsically disordered proteins.">
   <meta name="author" content="Nicola Galvanetto">
-<meta name="description" content="Experiemntal biophysics, Single-molecule FRET, biomolecular condensates, and intrinsically disordered proteins.">
+  <link rel="icon" href="../favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css" />
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Galvanetto Lab">
+  <meta property="og:title" content="Research — Nicola Galvanetto Lab">
+  <meta property="og:description" content="Experimental biophysics, Single-molecule FRET, biomolecular condensates, and intrinsically disordered proteins.">
+  <meta property="og:url" content="https://galvanettolab.org/research/">
+  <meta property="og:image" content="https://galvanettolab.org/images/bannerbeads.jpg">
+  <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
-  <header>
 
-<nav class="nav">
-  <div class="logo-hamburger">
-    <!-- Logo + text on the same line -->
-<div class="logo">
-  Galvanetto Lab 
-  <a href="https://www.ibs.fr/" target="_blank" style="text-decoration: none;">
-    <img src="../images/ibslogo.jpg" alt="IBS logo" class="ibs-logo" style="margin-left: 10px; margin-right: 10px;">
-  </a>
-  <a href="https://www.cnrs.fr/en" target="_blank" style="text-decoration: none;">
-    <img src="../images/cnrslogo.jpg" alt="CNRS logo" class="ibs-logo">
-  </a>
-</div>
-
-    <!-- Hamburger (only visible on mobile) -->
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
+  <!-- ───────── Sidebar ───────── -->
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <a class="site-title" href="../index.html">Galvanetto Lab</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </div>
 
-  <ul class="menu" id="menu">
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../people/">People</a></li>
-    <li><a href="../research/">Research</a></li>
-    <li><a href="../publications/">Publications</a></li>
-    <li><a href="../contact/">Contact & Positions</a></li>
-    <li><a href="../memoirs/" class="memoirs-link">Lab Memoirs</a></li>
-  </ul>
-</nav>
+    <div class="sidebar-body" id="menu">
+      <nav>
+        <ul class="menu">
+          <li><a href="../research/" class="active">Research</a></li>
+          <li><a href="../people/">People</a></li>
+          <li><a href="../publications/">Publications</a></li>
+          <li><a href="../join/">Join us</a></li>
+          <li><a href="../contact/">Contact</a></li>
+          <li class="aside"><a href="../memoirs/">Lab Memoirs</a></li>
+        </ul>
+      </nav>
 
-  </header>
 
-<main class="content">
-	<h2>Research projects</h2>
-	
-	<h3 style="margin-bottom: -3px;">Protein dynamics in realistic environments</h3>
-	<hr style="border: none; border-top: 1px solid #ccc; margin: 0;">
-  <p>
-    Proteins do not operate in isolation.
-	In living systems, they function within crowded, heterogeneous, and dynamically changing 
-	environments that profoundly influence their behavior.
-
-We investigate how these realistic conditions shape protein dynamics, interactions, 
-and conformational landscapes. Using single-molecule fluorescence experiments, 
-we directly observe how proteins move and fluctuate across different environments, 
-from dilute solutions, complex assemblies such as biomolecular condensates, to cells.
-
-By connecting molecular-level observations with larger-scale behavior, we aim to 
-understand how biological context governs protein function and dysfunction.
-  </p>
-	
-	
-<div style="display: flex; gap: 16px; align-items: center;">
-  <figure style="width: 50%; margin: 0;">
-    <img src="../images/chain.gif" style="width: 100%; height: auto;" alt="">
-  </figure>
-  <figure style="width: 50%; margin: 0;">
-    <img src="../images/cells and droplets.png" style="width: 100%; height: auto;" alt="">
-  </figure>
-</div>
-	
-	
-	
-	<figure class="main-figure" style="--w:90%;">
-				<figcaption class="main-caption">We aim to observe protein dynamics 
-				(video from <a href="https://www.nature.com/articles/s41557-021-00839-3">Heidarsson, Mercadante et al., 2022</a>)
-				using fluorescence spectroscopy in realistic conditions as in biomolecular condensates and cells. 
-				</figcaption>
-	</figure>
-  
-  
-  	<h3 style="margin-bottom: -3px;">Protein behavior in out-of-equilibrium conditions</h3>
-	<hr style="border: none; border-top: 1px solid #ccc; margin: 0;">
-  <p>
-Many biological processes occur far from equilibrium, where energy 
-consumption and active forces continuously drive molecular behavior. 
-Under these conditions, proteins can access states and dynamics that are not observed at equilibrium.
-
-We investigate how out-of-equilibrium conditions influence protein behavior, 
-focusing on their dynamics, interactions, and conformational changes. 
-By combining single-molecule fluorescence experiments with controlled
- perturbations, we aim to directly observe how energy input reshapes molecular landscapes.
-
-This work is carried out in close interaction with collaborators working 
-on non-equilibrium systems, bridging concepts from physics with biological function.
-  </p>
-  
-  	<figure class="main-figure" style="--w:90%;">
-		<img src="../images/sci advances.png" class="main-imagewrapNoshadow" alt="">
-	</figure>
-	<figure class="main-figure" style="--w:90%;">
-				<figcaption class="main-caption">Proteins at thermal equilibrium show 
-				a Brownian diffusive motion in the cell (left).
-				By switching-on an external energy source, molecules are in an out-of-thermal equilibrium collective 
-				vibrational state that can generate electro-dynamic forces through associated large dipolar resonant oscillations (right). 
-		(image from <a href="https://www.science.org/doi/full/10.1126/sciadv.abl5855">Lechelon et al., 2022</a>).</figcaption>
-	</figure>
-	
-
-	
-	
-	<section class="funding-section">
-  <div class="funding-divider"></div>
-  <h2 class="funding-title">Funding</h2>
-  <div class="funding-logos">
-
-    <a href="https://www.insb.cnrs.fr/fr/atip-avenir" target="_blank" rel="noopener noreferrer" class="funding-item">
-      <img src="../images/atiplogo.png" alt="ATIP-Avenir" class="funding-logo" />
-      <span class="funding-name">ATIP-Avenir</span>
-    </a>
-
-    <a href="https://www.ernsthadornfoundation.org/" target="_blank" rel="noopener noreferrer" class="funding-item">
-      <img src="../images/ernstlogo.png" alt="Ernst Hadorn Foundation" class="funding-logo" />
-      <span class="funding-name">Ernst Hadorn Foundation</span>
-    </a>
-
-  </div>
-</section>
-	
-  
-</main>
-
-<footer class="site-footer">
-  <div class="footer-logos-container">
-  <div class="footer-logos-left">
-      <img src="../images/formica.gif" alt="formica">
+      <div class="sidebar-logos">
+        <a href="https://www.cnrs.fr/en" target="_blank" rel="noopener"><img src="../images/cnrslogo.jpg" alt="CNRS"></a>
+        <a href="https://www.ibs.fr/" target="_blank" rel="noopener"><img src="../images/ibslogo.jpg" alt="IBS"></a>
+      </div>
     </div>
-  
-  
-  
-  
-    <div class="footer-logos-right">
-      <a href="https://www.cnrs.fr/en" target="_blank" rel="noopener">
-        <img src="../images/cnrslogo.jpg" alt="Logo cnrs">
-      </a>
+  </aside>
 
-      <a href="https://www.cea.fr/english/Pages/home.aspx" target="_blank" rel="noopener">
-        <img src="../images/cealogo.jpg" alt="Logo 2">
-      </a>
+  <!-- ───────── Main ───────── -->
+  <main class="main">
+    <div class="wrap">
+      <div class="breadcrumb">
+        <a href="../index.html" class="crumb-home" aria-label="Home"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M3.5 11.5 12 4.5l8.5 7"/><path d="M6 9.5V20h4.2v-5.5h3.6V20H18V9.5"/></svg></a>
+        <span>-</span>
+        <span>Research</span>
+      </div>
 
-      <a href="https://www.univ-grenoble-alpes.fr/english/" target="_blank" rel="noopener">
-        <img src="../images/ugalogo.jpg" alt="Logo 3">
-      </a>
+      <h1 class="statement">Research projects</h1>
+
+      <section class="row">
+        <h2 class="label">Protein dynamics in realistic environments</h2>
+        <div class="text">
+          <p>Proteins do not operate in isolation.
+          In living systems, they function within crowded, heterogeneous, and dynamically changing
+          environments that profoundly influence their behavior.</p>
+          <p>We investigate how these realistic conditions shape protein dynamics, interactions,
+          and conformational landscapes. Using single-molecule fluorescence experiments,
+          we directly observe how proteins move and fluctuate across different environments,
+          from dilute solutions, complex assemblies such as biomolecular condensates, to cells.</p>
+          <p>By connecting molecular-level observations with larger-scale behavior, we aim to
+          understand how biological context governs protein function and dysfunction.</p>
+        </div>
+      </section>
+
+      <figure class="figure">
+        <div class="grid-2">
+          <div class="plate cell"><video autoplay loop muted playsinline aria-label="Protein chain dynamics"><source src="../images/chain.webm" type="video/webm"><source src="../images/chain.mp4" type="video/mp4"></video></div>
+          <div class="plate cell"><img src="../images/cells and droplets.png" alt="Cells and biomolecular condensates"></div>
+        </div>
+        <figcaption class="row">
+          <span class="label"></span>
+          <span class="text">We aim to observe protein dynamics
+          (video from <a href="https://www.nature.com/articles/s41557-021-00839-3">Heidarsson, Mercadante et al., 2022</a>)
+          using fluorescence spectroscopy in realistic conditions as in biomolecular condensates and cells.</span>
+        </figcaption>
+      </figure>
+
+      <section class="row">
+        <h2 class="label">Protein behavior in out-of-equilibrium conditions</h2>
+        <div class="text">
+          <p>Many biological processes occur far from equilibrium, where energy
+          consumption and active forces continuously drive molecular behavior.
+          Under these conditions, proteins can access states and dynamics that are not observed at equilibrium.</p>
+          <p>We investigate how out-of-equilibrium conditions influence protein behavior,
+          focusing on their dynamics, interactions, and conformational changes.
+          By combining single-molecule fluorescence experiments with controlled
+          perturbations, we aim to directly observe how energy input reshapes molecular landscapes.</p>
+          <p>This work is carried out in close interaction with collaborators working
+          on non-equilibrium systems, bridging concepts from physics with biological function.</p>
+        </div>
+      </section>
+
+      <figure class="figure">
+        <div class="plate"><img src="../images/sci advances.png" alt="Proteins at and out of thermal equilibrium"></div>
+        <figcaption class="row">
+          <span class="label"></span>
+          <span class="text">Proteins at thermal equilibrium show
+          a Brownian diffusive motion in the cell (left).
+          By switching-on an external energy source, molecules are in an out-of-thermal equilibrium collective
+          vibrational state that can generate electro-dynamic forces through associated large dipolar resonant oscillations (right)
+          (image from <a href="https://www.science.org/doi/full/10.1126/sciadv.abl5855">Lechelon et al., 2022</a>).</span>
+        </figcaption>
+      </figure>
+
+      <section class="row">
+        <h2 class="label">Funding</h2>
+        <div class="text funding-logos">
+          <a href="https://erc.europa.eu/" target="_blank" rel="noopener noreferrer" class="funding-item">
+            <img src="../images/erclogo.png" alt="European Research Council, funded by the European Union">
+            <span>European Research Council</span>
+          </a>
+          <a href="https://www.insb.cnrs.fr/fr/atip-avenir" target="_blank" rel="noopener noreferrer" class="funding-item">
+            <img src="../images/atiplogo.png" alt="ATIP-Avenir">
+            <span>ATIP-Avenir</span>
+          </a>
+          <a href="https://www.ernsthadornfoundation.org/" target="_blank" rel="noopener noreferrer" class="funding-item">
+            <img src="../images/ernstlogo.png" alt="Ernst Hadorn Foundation">
+            <span>Ernst Hadorn Foundation</span>
+          </a>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <p>Galvanetto Lab — Institut de Biologie Structurale, Grenoble</p>
+        <p class="footer-right">© <span id="year"></span><img src="../images/formica.gif" alt="" class="ant-gif"></p>
+      </footer>
     </div>
-  </div>
-
-  <!-- BOTTOM TEXT -->
-  <div class="footer-bottom">
-    <p>© <span id="year"></span> Galvanetto Lab. All rights reserved.</p>
-  </div>
+  </main>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-</footer>
 
-<script>
-  // Hamburger menu toggle – this makes it actually work
-  document.addEventListener('DOMContentLoaded', function () {
-    const hamburger = document.getElementById('hamburger');
-    const menu = document.getElementById('menu');
-
-    hamburger.addEventListener('click', function () {
-      menu.classList.toggle('active');
-    });
-
-    // Optional: close menu when a link is clicked (very nice on mobile)
-    menu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        menu.classList.remove('active');
+    (function () {
+      var btn = document.getElementById("hamburger");
+      var menu = document.getElementById("menu");
+      btn.addEventListener("click", function () {
+        var open = menu.classList.toggle("open");
+        btn.classList.toggle("open", open);
+        btn.setAttribute("aria-expanded", open);
       });
-    });
-  });
-</script>
-
-
+      menu.querySelectorAll("a").forEach(function (a) {
+        a.addEventListener("click", function () { menu.classList.remove("open"); btn.classList.remove("open"); });
+      });
+    })();
+  </script>
 </body>
 </html>
